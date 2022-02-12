@@ -124,9 +124,9 @@ try:
                 if len(ip_list)>0:
                     ip_list.sort(key=lambda row: (row[-1]), reverse=True)
                     clipboard = "These are the suspicious IPs that need to be verified on the external/internal router:\n\nShort situation regarding the source ip`s matching the search:\n"
-                    for entry in range(0,list_end):
+                    for entry in range(list_end):
                         clipboard+=(f"\nSource IP: {ip_list[entry][1]} is seen {ip_list[entry][-1]} times in file uploaded!")
-                    for entry in range(0,list_end):
+                    for entry in range(list_end):
                         clipboard+=(f"\n\nDate of Event: {ip_list[entry][0]}\n")
                         clipboard+=(f"Source IP: {ip_list[entry][1]}\n")
                         clipboard+=(f"Source port: {ip_list[entry][2]}\n")
