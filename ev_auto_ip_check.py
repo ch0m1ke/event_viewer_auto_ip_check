@@ -97,8 +97,7 @@ def main():
                     for row in fw_check:
                         if len(row) != len(csv_header) and row != []: # line doesn't match header
                             color_print("\n[ERROR] The file may be corrupted!", "red")
-                            input("\nPress ENTER to quit...")
-                            sys.exit()
+                            return
                         if len(row)!=0:
                             if current_ip == '':
                                 current_ip = row[5]
@@ -138,13 +137,17 @@ def main():
                         color_print("\nText copied to clipboard, lazy b*****d!", "yellow")
                     else:
                         color_print("\n[ERROR] No records found!", "red")
+                        return
                 else:
                     color_print("\n[ERROR] The file may be corrupted!", "red")
+                    return
             except StopIteration:
                 color_print("\n[ERROR] The file is empty or corrupted!", "red")
+                return
     except OSError as err:
         color_print("\n[ERROR] The file does't exist or can't be opened!", "red")
-    input("\nPress ENTER to quit...")
+        return
 
 if __name__ == '__main__':
     main()
+    input("\nPress ENTER to quit...")
