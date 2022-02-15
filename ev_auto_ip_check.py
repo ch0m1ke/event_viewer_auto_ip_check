@@ -123,7 +123,7 @@ def main():
                         list_end = 5 # Used to get the first 5 IPs
                     if len(ip_list)>0:
                         ip_list.sort(key=lambda row: (row[-1]), reverse=True)
-                        clipboard = "These are the suspicious IPs that need to be verified on the external/internal router:\n\nShort situation regarding the source ip`s matching the search:\n"
+                        clipboard = "These are the suspicious IPs that need to be verified on the external/internal router:\n\nShort situation regarding the source IPs matching the search:\n"
                         for entry in range(list_end):
                             clipboard+=(f"\nSource IP: {ip_list[entry][1]} is seen {ip_list[entry][-1]} times in file uploaded!")
                         for entry in range(list_end):
@@ -134,7 +134,7 @@ def main():
                             clipboard+=(f"Destination port: {ip_list[entry][4]}")
                         copy_to_clipboard(clipboard)
                         color_print(f"\n{clipboard}", "green")
-                        color_print("\nText copied to clipboard, lazy b*****d!", "yellow")
+                        color_print("\nText copied to clipboard!", "yellow")
                     else:
                         color_print("\n[ERROR] No records found!", "red")
                         return
