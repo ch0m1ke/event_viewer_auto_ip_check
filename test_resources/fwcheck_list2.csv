@@ -1,0 +1,19 @@
+"Receive Time","Severity","Event Type ID","Event Name","Device","Source","Source User Identity","Source Service","Destination Service","Destination","Destination FQDN","Action","Risk Rating","Description","Event ID","Source Interface","Destination Interface"
+"02/02/22 23:51:05","Warning","106023","Denied IP packet","EXAMPLE_FIREWALL","224.123.12.34","","tcp/45824","tcp/23","192.14.165.221","","deny","","Deny tcp src outside:224.123.12.34/45824 dst inside:192.14.165.221/23 by access-group ""access-outside-in"" [0x58554424, 0x0]","92842677748","outside","inside"
+"02/02/22 23:49:40","Warning","106023","Denied IP packet","EXAMPLE_FIREWALL","224.123.12.34","","tcp/52714","tcp/23","192.14.172.24","","deny","","Deny tcp src outside:224.123.12.34/52714 dst inside:192.14.172.24/23 by access-group ""access-outside-in"" [0x58554424, 0x0]","92842604678","outside","inside"
+
+
+"02/02/22 23:50:37","Warning","106023","Denied IP packet","EXAMPLE_FIREWALL","141.18.123,204","","tcp/46322","tcp/23","192.14.163.182","","deny","","Deny tcp src outside:141.18.123,204/46322 dst relay:192.14.163.182/23 by access-group ""access-outside-in"" [0x58554424, 0x0]","92842654838","outside","relay"
+"02/02/22 23:50:30","Warning","106023","Denied IP packet","EXAMPLE_FIREWALL","212.218.244.153","","tcp/57150","tcp/23","192.14.161.118","","deny","","Deny tcp src outside:212.218.244.153/57150 dst inside:192.14.161.118/23 by access-group ""access-outside-in"" [0x58554424, 0x0]","92842648772","outside","inside"
+"02/02/22 23:51:12","Warning","106023","Denied IP packet","EXAMPLE_FIREWALL","141.18.123,204","","tcp/4549","tcp/5555","192.14.169.36","","deny","","Deny tcp src outside:141.18.123,204/4549 dst inside:192.14.169.36/5555 by access-group ""access-outside-in"" [0x58554424, 0x0]","92842684296","outside","inside"
+
+
+"02/02/22 23:55:52","Warning","106023","Denied IP packet","EXAMPLE_FIREWALL","224.123.12.34","","tcp/24282","tcp/23","192.14.189.242","","deny","","Deny tcp src outside:224.123.12.34/24282 dst inside:192.14.189.242/23 by access-group ""access-outside-in"" [0x58554424, 0x0]","92842925744","outside","inside"
+
+
+
+"02/02/22 23:52:43","Warning","106023","Denied IP packet","EXAMPLE_FIREWALL","222.152.249.172","","tcp/24282","tcp/23","192.14.166.95","","deny","","Deny tcp src outside:222.152.249.172/24282 dst relay:192.14.166.95/23 by access-group ""access-outside-in"" [0x58554424, 0x0]","92842761124","outside","relay"
+"02/02/22 23:54:52","Warning","106023","Denied IP packet","EXAMPLE_FIREWALL","222.138.6.204","","udp/1900","udp/8082","192.14.183.34","","deny","","Deny udp src outside:222.138.6.204/1900 dst inside:192.14.183.34/8082 by access-group ""access-outside-in"" [0x58554424, 0x0]","92842872420","outside","inside"
+"02/02/22 23:51:16","Warning","106023","Denied IP packet","EXAMPLE_FIREWALL","212.208.224.151","","udp/1900","udp/8080","192.14.160.116","","deny","","Deny udp src outside212.208.224.151/1900 dst inside:192.14.160.116/8080 by access-group ""access-outside-in"" [0x58554424, 0x0]","92842687402","outside","inside"
+
+"02/02/22 23:48:54","Warning","106023","Denied IP packet","EXAMPLE_FIREWALL","222.138.6.204","","udp/1900","udp/1900","192.14.163.162","","deny","","Deny udp src outside:222.138.6.204/1900 dst relay:192.14.163.162/1900 by access-group ""access-outside-in"" [0x58554424, 0x0]","92842566634","outside","relay"

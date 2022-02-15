@@ -18,16 +18,19 @@ def save_ip(ip_details:list , count: int, dest_list: list) -> bool:
     if(ip_details == [] or count <= 0):
         return False
     current_ip_index = -1
-    for item in dest_list:
-        if ip_details[1] in item[1]: #  Check if ip is present in dest_list and update if so
-            current_ip_index = dest_list.index(item)
-            break
-    if current_ip_index != -1: # If ip not found in list
-        dest_list[current_ip_index][-1]+=count
-    else:
-        ip_details.append(count)
-        dest_list.append(ip_details)
-    return True
+    try:
+        for item in dest_list:
+            if ip_details[1] in item[1]: #  Check if ip is present in dest_list and update if so
+                current_ip_index = dest_list.index(item)
+                break
+        if current_ip_index != -1: # If ip not found in list
+            dest_list[current_ip_index][-1]+=count
+        else:
+            ip_details.append(count)
+            dest_list.append(ip_details)
+        return True
+    except Exception:
+        return False
 
 def copy_to_clipboard(data_to_copy: str) -> bool:
     this_os = platform.system()
