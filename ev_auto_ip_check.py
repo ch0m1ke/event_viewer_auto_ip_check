@@ -144,7 +144,7 @@ def main():
             except StopIteration:
                 color_print("\n[ERROR] The file is empty or corrupted!", "red")
                 return
-    except OSError as err:
+    except OSError:
         color_print("\n[ERROR] The file does't exist or can't be opened!", "red")
         return
 
